@@ -1,0 +1,1 @@
+Google LLC is an United States based multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware.

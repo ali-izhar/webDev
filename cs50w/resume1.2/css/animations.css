@@ -1,0 +1,85 @@
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header nav > *,
+.page-main,
+.page-footer > * {
+  opacity: 0;
+}
+
+.page-header,
+.page-footer,
+.page-main .text-wrapper {
+  overflow: hidden;
+}
+
+.page-header nav > * {
+  transform: translateY(-30px);
+}
+
+.page-footer > * {
+  transform: translateY(30px);
+}
+
+.page-header {
+  position: relative;
+}
+
+.page-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--main-purple-color);
+  z-index: 99999;
+  transform: scaleX(0);
+}
+.page-main .text-wrapper + .text-wrapper {
+  margin-top: 10px;
+}
+
+.page-main .text-wrapper * {
+  transform: translateY(125%);
+}
+
+.page-main .p-wrapper * {
+  transform: translateY(-120%);
+}
+
+.loaded .page-header::after {
+  animation: scaleIn 1.3s ease-in 0.2s forwards;
+}
+
+.loaded .page-main {
+  animation: fadeIn 1s ease-in 0.7s forwards;
+}
+
+.loaded .page-header nav > *,
+.loaded .page-footer > * {
+  animation: fadeIn 1s ease-in 0.7s forwards, slideIn 0.8s ease-in 0.9s forwards;
+}
+
+.loaded .page-main .text-wrapper * {
+  animation: slideIn 0.6s cubic-bezier(0.54, 0.46, 0.54, 0.94) 2s forwards;
+}
+
+@keyframes fadeIn {
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scaleIn {
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes slideIn {
+  100% {
+    transform: translateY(0);
+  }
+}

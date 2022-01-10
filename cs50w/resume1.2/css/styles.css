@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,700");
+
+:root {
+  --main-white-color: #f2f2f2;
+  --main-black-color: black;
+  --main-whitesmoke-color: #f5f5f5;
+  --main-purple-color: #9e89b8;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font: 16px/1.5 "Dosis", sans-serif;
+  background: var(--main-white-color);
+}
+
+
+
+/* CONTAINER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.wrapper > * {
+  padding: 15px;
+}
+
+
+
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header {
+  background: var(--main-white-color);
+}
+.page-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-header nav a > h1 {
+    font-size: 30px;
+    font-family: Brush Script MT;
+}
+.page-header ul {
+  display: flex;
+  order: 1;
+  width: 100%;
+  margin-top: 15px;
+}
+.page-header ul li:not(:last-child) {
+  padding-right: 30px;
+}
+.page-header a:hover {
+  color: maroon;
+}
+
+/* MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 350px;
+  background: url() no-repeat center / cover;
+  background-blend-mode: luminosity;
+  color: var(--main-black-color);
+}
+.page-main div {
+  max-width: 600px;
+}
+.page-main h2 {
+  margin-bottom: 20px;
+}
+.page-main p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#gap {
+  margin: 10px 0 10px;
+  font-weight: bold;
+}
+.page-main a:hover {
+    color: tomato;
+}
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+    background: var(--main-white-color);
+    /* border-top: 2px solid var(--main-purple-color); */
+}
+.page-footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.page-footer li > span {
+    font-weight: bold;
+}
+
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 550px) {
+  .page-header ul {
+    width: auto;
+    margin-top: 0;
+  }
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer ul {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  .page-main {
+    padding-left: 90px;
+  }
+}

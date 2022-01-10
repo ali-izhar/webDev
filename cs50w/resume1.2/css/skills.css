@@ -1,0 +1,47 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.page-header {
+    padding-bottom: 0.95%;
+    border-bottom: 2px solid var(--main-purple-color);
+}
+/* MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 350px;
+    background: url() no-repeat center / cover;
+    background-blend-mode: luminosity;
+    color: var(--main-black-color);
+}
+.page-main h2 {
+    margin-bottom: 20px;
+    font-family: Brush Script MT;
+}
+.page-main a:hover {
+    color: tomato;
+}
+.page-main p {
+    margin: 0;
+    padding-top: 10px;
+}
+.awards ul > li {
+    list-style: disc;
+    margin-left: 40px;
+}
+
+
+/* Animations
+----------------------------------------------*/
+.skills {
+    -webkit-animation-delay: 0.1s;
+}
+.certs {
+    -webkit-animation-delay: 0.5s;
+}
+.awards {
+    -webkit-animation-delay: 0.9s;
+}

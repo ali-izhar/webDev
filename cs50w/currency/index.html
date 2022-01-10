@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Currency</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <body>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="text">Convert your currency to <span>USD</span> standard.</div>
+                <form>
+                    <input id="currency" list="currencies" placeholder="Currency">
+                    <datalist id="currencies">
+                        <option value="CAD">Canadian dollar</option>
+                        <option value="HKD">Hong Kong dollar</option>
+                        <option value="ISK">Icelandic króna</option>
+                        <option value="PHP">Philippine peso</option>
+                        <option value="DKK">Danish krone</option>
+                        <option value="HUF">Hungarian forint</option>
+                        <option value="CZK">Czech koruna</option>
+                        <option value="GBP">British pound</option>
+                        <option value="RON">Romanian leu</option>
+                        <option value="SEK">Swedish krona</option>
+                        <option value="IDR">Indonesian rupiah</option>
+                        <option value="INR">Indian rupee</option>
+                        <option value="BRL">Brazilian real</option>
+                        <option value="RUB">Russian ruble</option>
+                        <option value="HRK">Croatian kuna</option>
+                        <option value="JPY">Japanese yen</option>
+                        <option value="THB">Thai baht</option>
+                        <option value="CHF">Swiss franc</option>
+                        <option value="EUR">Euro</option>
+                        <option value="MYR">Malaysian ringgit</option>
+                        <option value="BGN">Bulgarian lev</option>
+                        <option value="TRY">Turkish lira</option>
+                        <option value="CNY">Chinese yuan</option>
+                        <option value="NOK">Norwegian krone</option>
+                        <option value="NZD">New Zealand dollar</option>
+                        <option value="ZAR">South African rand</option>
+                        <option value="USD">United States dollar</option>
+                        <option value="MXN">Mexican peso</option>
+                        <option value="SGD">Singapore dollar</option>
+                        <option value="AUD">Australian dollar</option>
+                        <option value="ILS">Israeli new shekel</option>
+                        <option value="KRW">South Korean won</option>
+                        <option value="PLN">Polish złoty</option>
+                    </datalist>
+                    <input id="submit" type="submit" value="Convert">
+                </form>
+                <div id="result"></div>
+                <div id="back"></div>
+            </div>
+        </div>
+        </div>    
+    </body>
+</html>

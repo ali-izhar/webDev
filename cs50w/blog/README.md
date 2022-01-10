@@ -1,0 +1,2 @@
+This is my final project for CS50W. In this project, I use a model to create and insert new blog entries into
+the home page. The header, which contains a dropdown, showcases my educational and extra activitites, while the footer contains social media glyphicons to direct the user to my social media websites. In the projects folder in the header, a round clock uses a JavaScript interval function to update per second and show the current time to the user.

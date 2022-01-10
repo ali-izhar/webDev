@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    padding-top: 30px;
+  h1 {
+    font-size: 5em;
+  }
+  #count, #reset, #light, #dark, #auto {
+  margin: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+  #light, #dark {
+    margin: 10px;
+  }
+}
+
+p  {
+  margin: 0;
+
+  span {
+  color: tomato;
+  font-weight: bold;
+  font-family: Trebuchet MS;
+  font-size: 1.2em;
+  }
+}
+
+#time {
+  font-weight: bold;
+  color: orange;
+}

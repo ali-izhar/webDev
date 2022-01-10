@@ -1,0 +1,40 @@
+
+.wrapper {
+  background-image: url("https://images.wallpaperscraft.com/image/code_coding_binary_code_abstract_patterns_112140_1366x768.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h2 {
+  font-size: 1.5em;
+}
+@media (min-width: 768px) {
+  .panel-footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 101px;
+  }
+}
+
+@media (max-width: 767px) {
+  .panel-footer {
+    margin-top: 100px;
+  }
+}
+
+/* animations */
+@keyframes slidein {
+  from {
+    left: 0%;
+    opacity: 0;
+  }
+  to {
+    left: 5%;
+    opacity: 1;
+  }
+}
+.move {
+  animation-duration: 1s;
+  animation-name: slidein;
+}

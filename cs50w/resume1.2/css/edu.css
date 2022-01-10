@@ -1,0 +1,49 @@
+/* Header
+-------------------------------------------------- */
+.page-header {
+    padding-bottom: 0.95%;
+    border-bottom: 2px solid var(--main-purple-color);
+}
+
+
+
+/* MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+    overflow-x: hidden;
+}
+.page-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 350px;
+    background: url() no-repeat center / cover;
+    background-blend-mode: luminosity;
+    color: var(--main-black-color);
+}
+.page-main h2 {
+    font-family: Brush Script MT;
+    margin-bottom: 20px;
+}
+.page-main a:hover {
+    color: tomato;
+}
+#school {
+    font-weight: bold;
+}
+#span {
+    font-size: 0.8em;
+    font-style: italic;
+    padding-left: 10%;
+}
+.page-main p {
+    margin: 40px 0 0 0;
+}
+#cert {
+    color: tomato;
+}
+.high-school, .elem-school {
+    margin-right: 50px;
+}
+/* Animations 
+-----------------------------------------------------*/

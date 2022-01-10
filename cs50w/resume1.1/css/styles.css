@@ -1,0 +1,206 @@
+/* Global Styles
+lightblue
+#ADD8E6
+rgb(173,216,230)
+---------------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+body {
+    /* color: #343434; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+img {
+    width: 300px;
+}
+a {
+    color: #FFE66D;
+}
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+h2 {
+    font-size: 45px;
+}
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+.content-wrap {
+    max-width: 800px;       /* the max width for the main content is 800px*/
+    width: 85%;             /* when the browser window is less than 800px, the content will occupy 85% */
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+
+/* Header
+---------------------------------------------*/
+header {
+    background: #2F3061;
+    color: #F7FFF7;
+}
+
+
+
+/* Skills
+--------------------------------------------*/
+.skills {
+    background: #F7FFF7;
+}
+.skills a {
+    color: #2F3061;
+}
+.skills .btn {
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.skills .btn:hover {
+    background: rgba(47, 48, 97, 0.8);
+}
+.skill-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+.divider section:last-of-type {
+    border-bottom: none;
+}
+.skill-item h3 {
+    margin-top: 0;
+}
+.skill-item.projects a {
+    margin: 5px 5px;
+}
+
+
+
+
+/* Work Experience
+--------------------------------------------*/
+.work-experience {
+    background: #A1C6D7;
+}
+
+
+
+/* Honors, Awards, Certifications
+---------------------------------------------*/
+.honors a {
+    color: black;
+    text-decoration: none;
+}
+.honors a:hover {
+    color: tomato;
+}
+.honors ul span {
+    font-style: italic;
+    padding-left: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+
+/* Education
+--------------------------------------------*/
+h3 {
+    margin-bottom: 0;
+}
+h3 + p {
+    font-style: italic;
+}
+h3 ~ p {
+    margin: 0;
+}
+.education {
+    background-image: url(../images/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+.education p {
+    width: 60%;
+}
+
+/* Footer
+--------------------------------------------*/
+footer {
+    background: #343434;
+    color: #F7FFF7;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+
+
+
+/* Media Queries
+-----------------------------------------------*/
+
+@media screen and (min-width: 750px) {
+    /* the header and footer will text-align only for larger screens*/
+    header, footer {
+        text-align: center;
+    }
+
+    /* the images will float to the left only for larger screens*/
+    .skill-item img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    /* the grid (column) style will apply only for larger screens. They'll be block elements for smaller devices*/
+    .grid-model {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+    
+    /* the footer is horizental flex only for larger screens*/
+    .contact-list {
+    display: flex;
+    justify-content: center;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}

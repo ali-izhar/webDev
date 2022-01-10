@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Jekyll v4.1.1">
+        <title>Izhar Ali</title>
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/blog/">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/blog/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+            }
+        }
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">About</h4>
+                <p class="text-muted">Enthusiastic programmer eager to contribute to team success through hard work, attention to detail and excellent organizational skills. Clear understanding of Computer Science basics in general, and programming and web development in specific. Motivated to learn, grow, and excel in my field of study.</p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'skills' %}" class="text-white">Skills</a></li>
+                    <li><a href="{% url 'projects' %}" class="text-white">Projects</a></li>
+                    <li><a href="{% url 'certifications' %}" class="text-white">Certifications</a></li>
+                    <li><a href="{% url 'education' %}" class="text-white">Education</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+          <div class="container d-flex justify-content-between">
+            <a href="" class="navbar-brand d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <strong>Snapshot</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+        <div class="container">
+            <div class="nav-scroller py-1 mb-2"></div>
+
+            <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+                <div class="col-md-6 px-0">
+                <h1 class="display-4 font-italic">Digital Life</h1>
+                <p class="lead my-3">Hi, I am Izhar Ali. I love creating interactive websites, and enjoy playing cricket. In this blog, you'll find about my educational activites, skillset, online courses, and experiences as a computer science student in more detail!</p>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                {% for item in items %}
+                <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                      <strong class="d-inline-block mb-2 text-success">{{ item.criteria }}</strong>
+                      <h3 class="mb-0">{{ item.name }}</h3>
+                      <div class="mb-1 text-muted">{{ item.time }}</div>
+                      <p class="card-text mb-auto">{{ item.description }}</p>
+                      <a href="{{ item.website }}" class="stretched-link" target="_blank">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        {% if item.image %}
+                            <img src="{{ item.image.url }}" alt="image" width="200"></img>
+                        {% else %}
+                            <img src="" alt="image" width="200"></img>
+                        {% endif %}
+                    </div>
+                </div>
+                </div>
+                {% endfor %}
+            </div>
+            <p style="text-align: center;"><a href="">back to top</a></p>
+        </div>
+
+        <footer class="footer mt-auto py-3" class="container">
+          <span class="text-muted">Copyright &copy; 2020 -  All Rights Reserved by Izhar</span>
+            <ul class="list-unstyled">
+              <li><a href="mailto:izharali.skt@gmail.com" class="fa fa-google"></a></li>
+              <li><a href="https://github.com/me50/KataIzhar" class="fa fa-github" target="_blank"></a></li>
+              <li><a href="https://www.linkedin.com/in/izhar-ali-rowan" class="fa fa-linkedin" target="_blank"></a></li>
+              <li><a href="https://web.facebook.com/profile.php?id=100019871086967" class="fa fa-facebook" target="_blank"></a></li>
+            </ul>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

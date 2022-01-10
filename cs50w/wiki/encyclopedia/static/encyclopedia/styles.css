@@ -1,0 +1,64 @@
+body {
+    background-color: white;
+}
+code {
+    white-space: pre;
+}
+
+/* start of sidebar */
+.row h2 {
+  font-weight: bold;
+}
+.row h6 {
+  font-style: italic;
+}
+.row #first {
+  margin-top: 50px;
+}
+.row a {
+  font-size: 1.1em;
+}
+.sidebar {
+    background-color: #f0f0f0;
+    height: 100vh;
+    padding: 30px;
+}
+.nav-link{
+    font-size: 20px;
+    color:black;
+}
+.nav-link:hover{
+    color:darkgray;
+}
+/* end of sidebar */
+
+
+/* start of main body */
+h1 {
+    font-weight: normal;
+}
+.main {
+    padding: 50px;
+}
+textarea {
+    height: 50vh;
+    width: 80%;
+}
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+li{
+    list-style-type: circle;
+    font-size: 20px;
+}
+a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+
+h4 {
+  margin-top: 40px;
+}

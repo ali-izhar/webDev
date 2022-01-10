@@ -1,0 +1,76 @@
+.page-header {
+    padding-bottom: 0.95%;
+    border-bottom: 2px solid var(--main-purple-color);
+}
+.page-main h2 {
+    margin: 20px 0 20px auto;
+    font-family: Brush Script MT;
+}
+.page-main {
+    display: flex;
+    flex-direction: row;
+}
+.social {
+    margin: 80px 0 20px 80px;
+}
+
+.one {
+    -webkit-animation-delay: 0.1s;
+}
+.two {
+    -webkit-animation-delay: 0.2s;
+}
+.three {
+    -webkit-animation-delay: 0.3s;
+}
+.four {
+    -webkit-animation-delay: 0.4s;
+}
+.five {
+    -webkit-animation-delay: 0.5s;
+}
+.six {
+    -webkit-animation-delay: 0.6s;
+}
+.seven {
+    -webkit-animation-delay: 0.7s;
+}
+.eight {
+    -webkit-animation-delay: 0.8s;
+}
+.nine {
+    -webkit-animation-delay: 0.9s;
+}
+.ten {
+    -webkit-animation-delay: 1.0s;
+}
+.eleven {
+    -webkit-animation-delay: 1.1s;
+}
+.twelve {
+    -webkit-animation-delay: 1.2s;
+}
+.thirteen {
+    -webkit-animation-delay: 1.3s;
+}
+.fourteen {
+    -webkit-animation-delay: 1.4s;
+}
+.fifteen {
+    -webkit-animation-delay: 1.5s;
+}
+.sixteen {
+    -webkit-animation-delay: 1.6s;
+}
+.seventeen {
+    -webkit-animation-delay: 1.7s;
+}
+.eighteen {
+    -webkit-animation-delay: 1.8s;
+}
+.nineteen {
+    -webkit-animation-delay: 1.9s;
+}
+.twenty {
+    -webkit-animation-delay: 2.0s;
+}

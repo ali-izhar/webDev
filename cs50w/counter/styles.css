@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+  padding-top: 30px;
+}
+body h1 {
+  font-size: 5em;
+}
+body #count, body #reset, body #light, body #dark, body #auto {
+  margin: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+body #light, body #dark {
+  margin: 10px;
+}
+
+p {
+  margin: 0;
+}
+p span {
+  color: tomato;
+  font-weight: bold;
+  font-family: Trebuchet MS;
+  font-size: 1.2em;
+}
+
+#time {
+  font-weight: bold;
+  color: orange;
+}
+
+/*# sourceMappingURL=styles.css.map */
